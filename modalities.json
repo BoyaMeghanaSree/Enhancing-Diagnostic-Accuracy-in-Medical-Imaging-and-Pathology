@@ -1,0 +1,18 @@
+{
+  "Chest X-Ray": {
+    "model": "resnet50",
+    "run_dir": "runs_xray",
+    "normal_classes": [
+      "NORMAL"
+    ]
+  },
+  "Brain Tumor MRI": {
+    "model": "efficientnet",
+    "run_dir": "runs_mri",
+    "normal_classes": [
+      "no_tumor",
+      "notumor",
+      "Healthy"
+    ]
+  }
+}

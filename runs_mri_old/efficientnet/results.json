@@ -1,0 +1,72 @@
+{
+  "model": "efficientnet",
+  "timm_name": "efficientnet_b0",
+  "params_M": 4.0,
+  "classes": [
+    "glioma_tumor",
+    "meningioma_tumor",
+    "no_tumor",
+    "pituitary_tumor"
+  ],
+  "img_size": 224,
+  "color": false,
+  "normal_classes": [
+    "NORMAL",
+    "no_tumor",
+    "notumor",
+    "Healthy"
+  ],
+  "seed": 42,
+  "epochs_run": 20,
+  "train_time_s": 325,
+  "accuracy": 0.7360406091370558,
+  "macro_precision": 0.835605765485002,
+  "macro_recall": 0.7192450058754407,
+  "macro_f1": 0.6911556838048316,
+  "macro_auc": 0.9417397018746237,
+  "per_class": {
+    "glioma_tumor": {
+      "precision": 1.0,
+      "recall": 0.21,
+      "f1-score": 0.34710743801652894,
+      "support": 100.0
+    },
+    "meningioma_tumor": {
+      "precision": 0.6666666666666666,
+      "recall": 0.991304347826087,
+      "f1-score": 0.7972027972027972,
+      "support": 115.0
+    },
+    "no_tumor": {
+      "precision": 0.695364238410596,
+      "recall": 1.0,
+      "f1-score": 0.8203125,
+      "support": 105.0
+    },
+    "pituitary_tumor": {
+      "precision": 0.9803921568627451,
+      "recall": 0.6756756756756757,
+      "f1-score": 0.8,
+      "support": 74.0
+    },
+    "accuracy": 0.7360406091370558,
+    "macro avg": {
+      "precision": 0.835605765485002,
+      "recall": 0.7192450058754407,
+      "f1-score": 0.6911556838048316,
+      "support": 394.0
+    },
+    "weighted avg": {
+      "precision": 0.8178399271767065,
+      "recall": 0.7360406091370558,
+      "f1-score": 0.6896494364973974,
+      "support": 394.0
+    }
+  },
+  "triage_abnormal_vs_normal": {
+    "auc": 0.9799637502059647,
+    "sensitivity": 0.8408304498269896,
+    "specificity": 1.0,
+    "threshold": 0.5
+  }
+}
